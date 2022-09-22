@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const MenuItem = <>
-    <li><a>Home</a></li>
-    <li><a>About</a></li>
-    <li><a>Appoinmet</a></li>
-    <li><a>Reviews</a></li>
-    <li><a>Contact Us</a></li>
-    <li><a>Login</a></li>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/about">About</Link></li>
+    <li><Link to="/appointment">Appoinmet</Link></li>
+    <li><Link to="/reviews">Reviews</Link></li>
+    <li><Link to="/contactus">Contact Us</Link></li>
+    <li><Link to="/login">Login</Link></li>
 </>
 
 const Navbar = () => {
@@ -14,22 +15,20 @@ const Navbar = () => {
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabIndex={0} className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                         {MenuItem}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Doctars Portal</a>
+                <a className="text-xl normal-case btn btn-ghost">Doctars Portal</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal p-0">
+            <div className="hidden navbar-center lg:flex">
+                <ul className="p-0 menu menu-horizontal">
                     {MenuItem}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Get started</a>
-            </div>
+
         </div>
     );
 };
