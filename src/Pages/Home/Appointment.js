@@ -4,7 +4,7 @@ import Buton from '../Buton/Buton';
 
 const Appointment = () => {
     return (
-        <section className="flex my-28 items-center justify-center bg-[url('/src/assets/images/appointment.png')]" >
+        <section className="flex my-28 p-5 items-center justify-center bg-[url('/src/assets/images/appointment.png')]" >
             <div className='flex-1 hidden lg:block'>
                 <img className='mt-[-100px]' src={doctor} alt="/" />
             </div>
