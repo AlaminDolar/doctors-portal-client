@@ -16,14 +16,14 @@ const ReviewSection = () => {
             area: 'California'
         },
         {
-            _id: 1,
+            _id: 2,
             img: people2,
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quas eveniet architecto minus nostrum dolorum.',
             title: 'Wilson Hery',
             area: 'California'
         },
         {
-            _id: 1,
+            _id: 3,
             img: people3,
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quas eveniet architecto minus nostrum dolorum.',
             title: 'Wilson Hery',

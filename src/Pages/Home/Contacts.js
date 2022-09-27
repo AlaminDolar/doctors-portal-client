@@ -3,7 +3,7 @@ import Buton from '../Buton/Buton';
 
 const Contacts = () => {
     return (
-        <div className="my-28 bg-[url('/src/assets/images/appointment.png')]">
+        <div className=" bg-[url('/src/assets/images/appointment.png')]">
             <div className=' text-center pt-11       '>
                 <h2 className='text-primary py-2 font-bold text-xl'>Contact Us</h2>
                 <h4 className='text-3xl pb-6 text-white'>Stay Connected With Us</h4>
