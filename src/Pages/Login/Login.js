@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 
 const Login = () => {
@@ -35,9 +36,9 @@ let SignInError;
 
     return (
       
-        <div className='flex h-screen justify-center items-center'>
+<div className='flex h-screen justify-center items-center'>
            <div className="card w-96 bg-base-100 shadow-xl">
-  <div className="card-body">
+      <div className="card-body">
     <h2 className="text-center text-2xl font-bold">Log In</h2>
 
     {/* Use UseHook */}
@@ -111,7 +112,9 @@ message:'Password is Required'
       {
         SignInError
       }
+    
       <input className='btn w-full max-w-xs' type="submit" value='login'/>
+      <p><small>Doctors Portal new? <span><Link to='/singnUp' className='text-primary'>Create new account</Link></span></small></p>
     </form>
 
     <div className="divider">OR</div>
